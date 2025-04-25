@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexKid Studio - Young Web Developer</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-btn">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <i class="fas fa-code"></i>
+                <span>NexKid</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="navbar-links" id="navbar-links">
+                <a href="#about" data-en="About" data-es="Acerca de">About</a>
+                <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+                <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+                <a href="#fast-job" data-en="Fast Job" data-es="Trabajo Rápido">Fast Job</a>
+                <a href="#pricing" data-en="Pricing" data-es="Precios">Pricing</a>
+                <a href="#faq" data-en="FAQ" data-es="Preguntas">FAQ</a>
+                <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+                
+                <div class="language-switcher">
+                    <button id="en-btn" class="active">EN</button>
+                    <button id="es-btn">ES</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1 class="title">NexKid Studio</h1>
+            <p class="subtitle" data-en="Young Web Developer from Cirebon" data-id="Web Developer Muda dari Cirebon">Young Web Developer from Cirebon</p>
+        </div>
+        
+        <div class="scroll-indicator" id="scroll-down">
+            <span data-en="Scroll Down" data-id="Gulir ke Bawah">Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <section id="about" class="section-reveal">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="About Me" data-id="Tentang Saya">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p data-en="Hi! I'm the founder of NexKid Studio, a young web developer passionate about creating modern websites and turning ideas into reality. I've already worked on real projects and learn every day. I love design, coding, and building cool digital experiences. For me, age doesn't define creativity or skill. From clean landing pages to custom web projects, I'm ready to help bring your ideas to life. Let's build something epic together!" 
+               data-id="Halo! Aku adalah pendiri NexKid Studio, seorang web developer muda yang punya semangat besar buat mewujudkan ide-ide lewat website yang modern dan bersih. Walaupun aku masih 12 tahun, aku udah mulai ngerjain proyek nyata, terus belajar, dan makin dekat dengan mimpi jadi kreator digital. Aku suka desain, ngoding, dan bikin pengalaman digital yang keren. Buatku, umur bukan batasan buat berkarya. Dari landing page sederhana sampai proyek website custom, aku siap bantu wujudin ide-ide keren kamu ke dunia online. Yuk bikin sesuatu yang luar biasa bareng-bareng!">
+               Hi! I'm the founder of NexKid Studio, a young web developer passionate about creating modern websites and turning ideas into reality. I've already worked on real projects and learn every day. I love design, coding, and building cool digital experiences. For me, age doesn't define creativity or skill. From clean landing pages to custom web projects, I'm ready to help bring your ideas to life. Let's build something epic together!
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section-reveal">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="My Skills" data-id="Keahlian Saya">My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="90%"></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <button class="learn-more-btn" data-skill="html">Learn More</button>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="85%"></div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <button class="learn-more-btn" data-skill="css">Learn More</button>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="75%"></div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <button class="learn-more-btn" data-skill="javascript">Learn More</button>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="65%"></div>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <button class="learn-more-btn" data-skill="react">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="skill-popup-overlay" id="skillPopupOverlay">
+        <div class="skill-popup" id="htmlPopup">
+            <div class="popup-header">
+                <h3><i class="fab fa-html5"></i> HTML5</h3>
+                <button class="close-popup"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="popup-content">
+                <p>HTML5 is the latest version of the Hypertext Markup Language, the code that describes web pages. It's the standard markup language for creating web pages and web applications.</p>
+                <p>With HTML5, I can structure your content in a semantic way, making it more accessible and SEO-friendly. It allows for better multimedia integration without plugins.</p>
+                <div class="popup-features">
+                    <div class="popup-feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-universal-access"></i>
+                        <span>Accessibility</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-search"></i>
+                        <span>SEO Friendly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-popup" id="cssPopup">
+            <div class="popup-header">
+                <h3><i class="fab fa-css3-alt"></i> CSS3</h3>
+                <button class="close-popup"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="popup-content">
+                <p>CSS3 (Cascading Style Sheets) is the language that styles web content. It controls layout, colors, fonts, animations, and more.</p>
+                <p>I use CSS3 to create beautiful, responsive designs that work across all devices. With features like flexbox, grid, and animations, I can bring your website to life with smooth transitions and effects.</p>
+                <div class="popup-features">
+                    <div class="popup-feature">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Styling</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-th"></i>
+                        <span>Grid & Flexbox</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-film"></i>
+                        <span>Animations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-popup" id="javascriptPopup">
+            <div class="popup-header">
+                <h3><i class="fab fa-js"></i> JavaScript</h3>
+                <button class="close-popup"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="popup-content">
+                <p>JavaScript is the programming language of the web that makes pages interactive. It allows for dynamic content updates, user interface enhancements, and much more.</p>
+                <p>I use JavaScript to create interactive elements, validate forms, handle user events, and build dynamic features that engage visitors and improve user experience.</p>
+                <div class="popup-features">
+                    <div class="popup-feature">
+                        <i class="fas fa-cogs"></i>
+                        <span>Interactivity</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-server"></i>
+                        <span>API Integration</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-bolt"></i>
+                        <span>Dynamic Content</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-popup" id="reactPopup">
+            <div class="popup-header">
+                <h3><i class="fab fa-react"></i> React</h3>
+                <button class="close-popup"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="popup-content">
+                <p>React is a JavaScript library for building user interfaces, particularly single-page applications. It's maintained by Facebook and a community of developers.</p>
+                <p>With React, I can build fast, scalable web applications with reusable components. It's perfect for complex, data-driven websites that need to be highly responsive and interactive.</p>
+                <div class="popup-features">
+                    <div class="popup-feature">
+                        <i class="fas fa-cubes"></i>
+                        <span>Component-Based</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>High Performance</span>
+                    </div>
+                    <div class="popup-feature">
+                        <i class="fas fa-sync"></i>
+                        <span>Virtual DOM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="section-reveal">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Services" data-id="Layanan">Services</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="services-container">
+                <div class="service-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3 data-en="Web Development" data-id="Pengembangan Web">Web Development</h3>
+                    <p data-en="Custom websites built with the latest technologies" data-id="Website kustom dibangun dengan teknologi terbaru">Custom websites built with the latest technologies</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 data-en="Responsive Design" data-id="Desain Responsif">Responsive Design</h3>
+                    <p data-en="Websites that look great on all devices" data-id="Website yang terlihat bagus di semua perangkat">Websites that look great on all devices</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-search"></i>
+                    <h3 data-en="SEO Optimization" data-id="Optimasi SEO">SEO Optimization</h3>
+                    <p data-en="Improve your site's visibility on search engines" data-id="Tingkatkan visibilitas situs Anda di mesin pencari">Improve your site's visibility on search engines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fast-job" class="section-reveal">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Fast Job" data-id="Pekerjaan Cepat">Fast Job</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="fast-job-container">
+                <div class="fast-job-card">
+                    <div class="fast-job-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="fast-job-content">
+                        <h3 data-en="Quick Turnaround" data-id="Pengerjaan Cepat">Quick Turnaround</h3>
+                        <p data-en="Get your website in as little as 48 hours" data-id="Dapatkan website Anda dalam waktu secepat 48 jam">Get your website in as little as 48 hours</p>
+                        <a href="#contact" class="fast-job-btn" data-en="Order Now" data-id="Pesan Sekarang">Order Now</a>
+                    </div>
+                </div>
+                <div class="fast-job-card">
+                    <div class="fast-job-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="fast-job-content">
+                        <h3 data-en="Landing Pages" data-id="Halaman Arahan">Landing Pages</h3>
+                        <p data-en="Perfect for product launches or events" data-id="Sempurna untuk peluncuran produk atau acara">Perfect for product launches or events</p>
+                        <a href="#contact" class="fast-job-btn" data-en="Order Now" data-id="Pesan Sekarang">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
